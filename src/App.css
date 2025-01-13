@@ -1,0 +1,36 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Body text with Roboto */
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif; /* Headings with Merriweather */
+  font-weight: 700;
+}
+
+/* Additional Styling */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title {
+  font-family: 'Merriweather', serif; /* Card titles with Merriweather */
+}
+
+/* Light and Dark Theme */
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.light {
+  background-color: #f8f9fa;
+  color: #000;
+}

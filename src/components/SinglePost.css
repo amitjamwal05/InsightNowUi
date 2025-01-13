@@ -1,0 +1,39 @@
+/* Single Post Page Styling */
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 30px;
+  }
+  
+  .card-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .date_time {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 20px;
+    }
+    
+    .card-title {
+      font-size: 1.8rem;
+    }
+  
+    .card-text {
+      font-size: 1rem;
+    }
+  }
+  

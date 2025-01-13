@@ -1,0 +1,112 @@
+/* News Card Styling */
+.news-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.date_time {
+  font-size: 0.9rem;
+}
+
+button {
+  font-size: 0.9rem;
+}
+/* Navbar Logo */
+.logo {
+  height: 50px; /* Adjust the height of the logo for both desktop and mobile */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar for smaller screens */
+.navbar-nav {
+  text-align: center; /* Center the navigation links on smaller screens */
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Subtle border for toggle button */
+}
+
+.dropdown-toggle {
+  color: #fff !important; /* Ensure dropdown text is visible */
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #ddd !important; /* Lighter link color for better contrast */
+  margin: 0 10px; /* Add spacing between links */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff !important; /* Highlight on hover */
+}
+
+/* Adjust spacing for Dropdown items */
+.dropdown-menu {
+  background-color: #343a40; /* Match Navbar background */
+  border: none;
+}
+
+.dropdown-item {
+  color: #ddd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #495057;
+  color: #fff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  /* Adjust logo size on smaller screens */
+  .logo {
+    height: 40px;
+  }
+
+  /* Center dropdown and links for smaller screens */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin: 5px 0; /* Add spacing between links on smaller screens */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
