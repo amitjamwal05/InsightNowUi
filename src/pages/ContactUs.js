@@ -26,7 +26,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/contact/submit', formData);
+      const response = await axios.post('https://insightnow-m4sc.onrender.com/api/contact/submit', formData);
       setStatusMessage({ type: 'success', message: response.data.message });
       setFormData({ name: '', email: '', mobile: '', description: '' }); // Clear form
     } catch (error) {

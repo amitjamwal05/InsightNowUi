@@ -11,7 +11,7 @@ const TodayNews = () => {
   useEffect(() => {
     const fetchTodayNews = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/news/today');
+        const response = await axios.get('https://insightnow-m4sc.onrender.com/api/news/today');
         setNews(response.data);
         setLoading(false);
       } catch (err) {
@@ -59,7 +59,7 @@ const TodayNews = () => {
           <Col xs={12} md={6} lg={4} key={item._id} className="mb-4">
             <Card>
               {item.image && (
-                <Card.Img variant="top" src={`http://localhost:5000${item.image}`} alt={item.title} />
+                <Card.Img variant="top" src={`https://insightnow-m4sc.onrender.com${item.image}`} alt={item.title} />
               )}
               <Card.Body>
                 <Card.Title>{item.title}</Card.Title>

@@ -7,7 +7,7 @@ const Home = () => {
   const [news, setNews] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/news') // API endpoint to fetch news
+    axios.get('https://insightnow-m4sc.onrender.com/api/news') // API endpoint to fetch news
       .then(response => setNews(response.data))
       .catch(error => console.error(error));
   }, []);

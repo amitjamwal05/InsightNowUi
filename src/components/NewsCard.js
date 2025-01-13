@@ -34,7 +34,7 @@ const NewsCard = ({ news }) => {
         {/* Check if the image URL exists and construct it properly */}
         <Card.Img 
           variant="top" 
-          src={news.image ? `http://localhost:5000${news.image}` : '/default-image.jpg'} 
+          src={news.image ? `https://insightnow-m4sc.onrender.com${news.image}` : '/default-image.jpg'} 
           alt="News image"
           className="card-image" 
         />

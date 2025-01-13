@@ -18,7 +18,7 @@ const AdminDashboard = () => {
   // Fetch all posts
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/news', {
+      const response = await axios.get('https://insightnow-m4sc.onrender.com/api/news', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -65,13 +65,13 @@ const AdminDashboard = () => {
   
     try {
       const response = editPostId
-        ? await axios.put(`http://localhost:5000/api/news/${editPostId}`, postData, {
+        ? await axios.put(`https://insightnow-m4sc.onrender.com/api/news/${editPostId}`, postData, {
             headers: {
               Authorization: `Bearer ${token}`,
               'Content-Type': 'multipart/form-data',
             },
           })
-        : await axios.post('http://localhost:5000/api/news', postData, {
+        : await axios.post('https://insightnow-m4sc.onrender.com/api/news', postData, {
             headers: {
               Authorization: `Bearer ${token}`,
               'Content-Type': 'multipart/form-data',
@@ -114,7 +114,7 @@ const handleEdit = (post) => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/news/${postId}`, {
+      await axios.delete(`https://insightnow-m4sc.onrender.com/api/news/${postId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -150,7 +150,7 @@ const handleEdit = (post) => {
               <td>{post.title}</td>
               <td>{post.description}</td>
               <td>
-                <img src={post.image ? `http://localhost:5000${post.image}` : '/default-image.jpg'} alt={post.title} style={{ width: '100px' }} />
+                <img src={post.image ? `https://insightnow-m4sc.onrender.com${post.image}` : '/default-image.jpg'} alt={post.title} style={{ width: '100px' }} />
               </td>
               <td>{post.author}</td>
               <td>

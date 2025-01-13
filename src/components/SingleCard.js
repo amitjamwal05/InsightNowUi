@@ -11,7 +11,7 @@ const SinglePost = () => {
 
   useEffect(() => {
     // Fetch the full post details using the postId
-    axios.get(`http://localhost:5000/api/news/${newsId}`)
+    axios.get(`https://insightnow-m4sc.onrender.com/api/news/${newsId}`)
       .then(response => setPost(response.data))
       .catch(error => console.error('Error fetching post:', error));
   }, [newsId]);
@@ -26,7 +26,7 @@ const SinglePost = () => {
         {/* Dynamically load image based on the URL returned by the backend */}
         <Card.Img 
           variant="top" 
-          src={post.image ? `http://localhost:5000${post.image}` : '/default-image.jpg'} 
+          src={post.image ? `https://insightnow-m4sc.onrender.com${post.image}` : '/default-image.jpg'} 
           alt="Post image" 
         />
         <Card.Body>
